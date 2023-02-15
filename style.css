@@ -1,8 +1,47 @@
 *{
-    /* margin: 0; */
     padding: 0;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.sub-container h1{
+    font-size: 60px;
 }
 
 img{
     width: 300px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 300px;
+    }
+    .sub-container h1{
+        font-size: 60px;
+    }
 }
